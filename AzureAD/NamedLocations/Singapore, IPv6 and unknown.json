@@ -1,0 +1,15 @@
+{
+  "SVC": null,
+  "REF": null,
+  "ENV": null,
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/namedLocations/$entity",
+  "@odata.type": "#microsoft.graph.countryNamedLocation",
+  "countriesAndRegions": [
+    "SG"
+  ],
+  "createdDateTime": "2021-04-07T14:43:05.5930357Z",
+  "displayName": "Singapore, IPv6 and unknown",
+  "id": "14960a04-fce5-4439-b28c-c7cf32d49f3d",
+  "includeUnknownCountriesAndRegions": true,
+  "modifiedDateTime": "2021-04-07T14:43:05.5930357Z"
+}

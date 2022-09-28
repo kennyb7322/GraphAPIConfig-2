@@ -1,0 +1,6 @@
+{
+    "gracePeriodHours": 24,
+    "actionType": "block",
+    "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+    "notificationMessageCCList": []
+}

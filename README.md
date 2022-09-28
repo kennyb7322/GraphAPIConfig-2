@@ -1,0 +1,41 @@
+# GraphAPIConfig
+Configuration files for deployment with the [GraphAPI][graphapi-link] and [Pipeline][pipeline-link] definitions
+## Azure AD
+|  |  main  | develop |
+|:---| :----: | :-----: |
+| Conditional Access Policies |[![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Azure%20AD/Conditional%20Access/SVC-CA%3BENV-P%3B%20Policies?branchName=main)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=2&branchName=main)|[![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Azure%20AD/Conditional%20Access/SVC-CA%3BENV-D%3B%20Policies?branchName=develop)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=5&branchName=develop)|
+| Groups |[![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Azure%20AD/Groups/SVC-AD%3BENV-P%3B%20Groups?branchName=main)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=9&branchName=main)|[![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Azure%20AD/Groups/SVC-AD%3BENV-D%3B%20Groups?branchName=develop)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=7&branchName=develop)|
+| Named Locations |[![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Azure%20AD/Named%20Locations/SVC-AD%3BENV-P%3B%20Named%20Locations?branchName=main)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=10&branchName=main)|[![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Azure%20AD/Named%20Locations/SVC-AD%3BENV-D%3B%20Named%20Locations?branchName=develop)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=11&branchName=develop)|
+| Subscription Group Assignment | [![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Azure%20AD/Subscriptions/SVC-CS%3BENV-P%3B%20Subscriptions?branchName=main)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=23&branchName=main) | [![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Azure%20AD/Subscriptions/SVC-CS%3BENV-D%3B%20Subscriptions?branchName=develop)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=24&branchName=develop) |
+| Directory Role Group Assignment | [![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Azure%20AD/Roles/SVC-AR%3BENV-P%3B%20Roles?branchName=main)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=27&branchName=main) | [![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Azure%20AD/Roles/SVC-AR%3BENV-D%3B%20Roles?branchName=develop)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=28&branchName=develop) |
+| Privileged Identity Management | | |
+| Organisation Configuration | | |
+| Domain Configuration | | |
+| Authentication Configuration | | |
+## Endpoint Manager (Intune)
+|  |  main  | develop |
+|:---| :----: | :-----: |
+| Device Policies | [![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Endpoint%20Manager/Device%20Management/Policies/SVC-EM%3BENV-P%3B%20Device%20Policies?branchName=main)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=18&branchName=main) | [![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Endpoint%20Manager/Device%20Management/Policies/SVC-EM%3BENV-D%3B%20Device%20Policies?branchName=develop)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=19&branchName=develop) |
+| App Policies  | [![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Endpoint%20Manager/App%20Management/Policies/SVC-EM%3BENV-P%3B%20App%20Policies?branchName=main)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=15&branchName=main) | [![Build Status](https://dev.azure.com/wesleytrust/GraphAPI/_apis/build/status/Endpoint%20Manager/App%20Management/Policies/SVC-EM%3BENV-D%3B%20App%20Policies?branchName=develop)](https://dev.azure.com/wesleytrust/GraphAPI/_build/latest?definitionId=16&branchName=develop) |
+| Enrolment Configuration | | |
+## JSON Definitions of:
+### Azure AD
+- Conditional Access Policies
+- Groups
+- Named Locations
+- Subscriptions
+  - Dependencies
+- Directory Roles
+### Endpoint Manager (Intune)
+- Device Compliance
+  - Windows 10
+- App Protection
+  - Android Apps
+  - iOS Apps
+## [CI/CD Pipeline][pipeline-link] to Import, Plan and Deploy:
+- Validating the input against set criteria
+- Evaluating the input against what is deployed, to create a change plan for approval
+- Deploying to a specified environment, applying the approved plan
+
+[graphapi-link]: /wesley-trust/GraphAPI
+[pipeline-link]: https://dev.azure.com/wesleytrust/GraphAPI

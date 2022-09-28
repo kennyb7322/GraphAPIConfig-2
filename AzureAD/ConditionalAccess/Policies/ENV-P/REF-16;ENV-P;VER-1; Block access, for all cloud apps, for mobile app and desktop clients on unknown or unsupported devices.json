@@ -1,0 +1,64 @@
+{
+  "REF": "16",
+  "VER": "1",
+  "ENV": "P",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity",
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "mobileAppsAndDesktopClients"
+    ],
+    "servicePrincipalRiskLevels": [],
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": []
+    },
+    "users": {
+      "includeUsers": [],
+      "excludeUsers": [],
+      "includeGroups": [
+        "f5d03515-27a0-40cd-adb1-e14a0783dd4d"
+      ],
+      "excludeGroups": [
+        "e686476e-ce69-4e87-a485-fb29eff7a75a"
+      ],
+      "includeRoles": [],
+      "excludeRoles": []
+    },
+    "platforms": {
+      "includePlatforms": [
+        "all"
+      ],
+      "excludePlatforms": [
+        "android",
+        "iOS",
+        "windows",
+        "macOS"
+      ]
+    }
+  },
+  "createdDateTime": "2021-12-09T22:03:51.6718982Z",
+  "displayName": "REF-16;ENV-P;VER-1; Block access, for all cloud apps, for mobile app and desktop clients on unknown or unsupported devices",
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": []
+  },
+  "id": "469f5e6b-1490-425a-87a5-c0b1348f2d9f",
+  "modifiedDateTime": null,
+  "sessionControls": null,
+  "state": "disabled"
+}

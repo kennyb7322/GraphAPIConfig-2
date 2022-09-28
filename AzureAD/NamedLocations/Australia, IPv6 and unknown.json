@@ -1,0 +1,15 @@
+{
+  "SVC": null,
+  "REF": null,
+  "ENV": null,
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/namedLocations/$entity",
+  "@odata.type": "#microsoft.graph.countryNamedLocation",
+  "countriesAndRegions": [
+    "AU"
+  ],
+  "createdDateTime": "2021-04-07T14:42:55.1260846Z",
+  "displayName": "Australia, IPv6 and unknown",
+  "id": "13819d2c-74a8-4c9b-9805-94939cc3b2e7",
+  "includeUnknownCountriesAndRegions": true,
+  "modifiedDateTime": "2021-04-07T14:42:55.1260846Z"
+}
